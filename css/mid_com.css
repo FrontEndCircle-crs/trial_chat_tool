@@ -1,0 +1,91 @@
+#paging {
+  width:100%;
+  font-size:12px;
+}
+
+#paging .txt {
+  padding:0px 3px;
+  font-weight:bold;
+}
+
+#err_font {
+  font-weight:bold;
+  font-size:13px;
+}
+
+#title {
+  border-collapse:collapse;
+  width:100%;
+  margin:15px 0px;
+}
+
+#title td {
+  border:solid 1px #00bfff;
+  padding:5px;
+}
+
+#lst {
+  padding-bottom:20px;
+}
+
+#lst table {
+  width:100%;
+  font-size:12px;
+  margin-bottom:20px;
+  background-color:#F0FFFF;
+  border-collapse:collapse;
+}
+
+#lst table td {
+  border:solid 1px #dfdfdf;
+  padding:5px;
+  max-width:200px;
+}
+
+#cgi {
+  padding-bottom:20px;
+}
+
+#cgi .input {
+  font-size:13px;
+  border-collapse:collapse;
+  background-color:#F0FFFF;
+}
+
+#cgi .input td {
+  border:solid 1px #dfdfdf;
+}
+#cgi .input .pd {
+  padding:5px;
+}
+
+#inline_editor {
+  margin-top:30px;
+  padding-bottom:20px;
+}
+
+#inline_editor table {
+  text-align:left;
+  font-size:12px;
+  border-collapse:collapse;
+}
+
+#inline_editor table td {
+  border:solid 1px #dfdfdf;
+}
+
+#inline_editor table .edit {
+  width:300px;
+}
+
+#add_btn {
+  text-align:left;
+  padding-top:20px;
+  padding-left:20px;
+}
+
+#add_btn .att {
+  font-size:15px;
+  font-weight:bold;
+  color:#ff0000;
+}

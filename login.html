@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<title>チャットツール　ログイン</title>
+</head>
+<body>
+<div id="wrap">
+  <div id="login_bg">
+    <table id="login_table">
+    <tr>
+      <td class="title">ログイン画面</td>
+    </tr>
+    <tr>
+      <td class="bitem"></td>
+    </tr>
+    <tr>
+      <td>
+          <div class="item">ユーザーID</div>
+          <div class="item"><input type="text" id="js_login_id" class="text_field" name="login_id" pattern="^[0-9A-Za-z-_@.]+$" required></div>
+          <div class="item">パスワード</div>
+          <div class="item"><input type="password" id="js_password" class="text_field" name="password" required></div>
+      </td>
+    </tr>
+    </table>
+    <table id="login_table">
+      <tr>
+        <td id="btn"><button id="js_login_btn" class="btn_img1" type="submit">ログイン</button></td>
+      </tr>
+    </table>
+  </div>
+  <div id="att">※PHPは使えないし、nodeも使えないので、セキュリティは考慮してません</div>
+  <div id="footer">(C) Ohtsu Fumihiro</div>
+</div>
+</body>
+</html>

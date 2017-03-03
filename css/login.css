@@ -1,0 +1,46 @@
+@import "common.css";
+@import "btn.css";
+
+#login_bg {
+  position:absolute;
+  left:35%;
+  top:30%;
+  width:325px;
+  height:260px;
+  background-image:url(../img/login.jpg);
+  background-repeat:no-repeat;
+}
+
+#login_table td {
+  vertical-align:top;
+  padding-left:20px;
+  padding-bottom:5px;
+}
+
+#login_table .title {
+  font-size:17px;
+  font-weight:bold;
+  color:#3399ff;
+  height:30px;
+}
+
+#login_table .bitem {
+  font-size:14px;
+  font-weight:bold;
+}
+
+#login_table .item {
+  padding-top:10px;
+}
+
+#login_table .text_field {
+  width:280px;
+}
+
+#att {
+  position:absolute;
+  bottom:18px;
+  font-size:15px;
+  font-weight:bold;
+  color:#ff0000;
+}

@@ -1,0 +1,123 @@
+@import "common.css";
+@import "head_menu.css";
+
+#sidemenu {
+  width:221px;
+  float:left;
+  padding:30px 0px 0px;
+}
+
+#sidemenu a {
+  font-size:12px;
+}
+
+#sidemenu td {
+  padding:10px 0px;
+  text-align:left;
+  vertical-align:top;
+}
+
+#sidemenu .thum {
+  width:65px;
+  padding-right:5px;
+}
+
+#sidemenu .name {
+  font-size:14px;
+  font-weight:bold;
+  width:145px;
+}
+
+#sidemenu .cont {
+  font-size:12px;
+  padding:5px 0px 0px 0px;
+  width:140px;
+}
+
+#sidemenu .link {
+  padding:5px 0px 10px 0px;
+  text-align:right;
+  width:140px;
+}
+
+#contents {
+  width:688px;
+  float:left;
+  padding:0px 0px 0px 5px;
+}
+
+#member {
+  width:688px;
+}
+
+#member .left {
+  width:415px;
+  padding:50px 15px 50px 40px;
+  vertical-align:top;
+}
+
+#member .right {
+  width:200px;
+  padding:50px 20px 50px 0px;
+  vertical-align:top;
+}
+
+#member .name {
+  display:block;
+  width:430px;
+  font-weight:bold;
+  font-size:18px;
+  padding:5px 0px 15px;
+}
+
+#member .profile {
+  display:block;
+  width:430px;
+  font-size:12px;
+  padding:5px 0px 15px;
+}
+
+#member .text {
+  display:block;
+  width:430px;
+  font-size:12px;
+}
+
+#member_sec {
+  font-size:12px;
+}
+
+#member_sec td {
+  padding-left:40px;
+}
+
+#member_sec .titletxt {
+  padding:0px 0px 20px 40px;
+  font-size:18px;
+  font-weight:bold;
+}
+
+#member_sec .secline {
+  padding:0px 0px 30px 0px;
+  border-top:solid 5px #ebebeb;
+  width:644px;
+}
+
+#member_sec .sec1txt {
+  padding:0px 15px 20px 40px;
+  font-size:12px;
+  display:block;
+  width:624px;
+}
+
+#member_sec .sec2txt {
+  padding:0px 15px 20px 0px;
+  font-size:12px;
+}
+
+#member_sec .sec2img {
+  font-size:10px;
+  float:left;
+  padding:0px 20px 20px 40px;
+}
+

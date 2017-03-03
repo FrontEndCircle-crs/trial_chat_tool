@@ -1,0 +1,68 @@
+@import "common.css";
+@import "btn.css";
+
+#ins_bg {
+  width:900px;
+  height:575px;
+  background-image:url(../img/ins.jpg);
+  background-repeat:no-repeat;
+  margin:80px auto 0px;
+  font-size:13px;
+  padding-bottom:30px;
+}
+
+#ins_table img {
+  vertical-align:top;
+  padding:3px 10px 0px 0px;
+}
+
+#ins_table td {
+  vertical-align:top;
+  padding-left:20px;
+  padding-bottom:10px;
+}
+
+#ins_table .title {
+  font-size:17px;
+  font-weight:bold;
+  color:#3399ff;
+  height:30px;
+}
+
+#ins_table .bitem {
+  font-size:14px;
+  font-weight:bold;
+}
+
+#ins_table .ok_txt {
+  padding-left:25px;
+  font-size:11px;
+  color:#3399ff;
+}
+
+#ins_table .ng_txt {
+  padding-left:25px;
+  font-size:11px;
+  font-weight:bold;
+  color:#ff0000;
+}
+
+#ins_table .att_txt {
+  font-size:11px;
+  font-weight:bold;
+  color:#ff0000;
+}
+
+#ins_table .err_txt {
+  font-size:14px;
+  font-weight:bold;
+  color:#ff0000;
+}
+
+#ins_table .item {
+  padding-top:15px;
+}
+
+#ins_table .text_field {
+  width:280px;
+}

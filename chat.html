@@ -1,0 +1,65 @@
+﻿<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/chat.js"></script>
+<!--<script type="text/javascript" src="js/lib/prototype.js"></script>
+<script type="text/javascript" src="js/src/scriptaculous.js"></script>-->
+<link rel="stylesheet" type="text/css" href="css/mid.css">
+<script type="text/javascript">
+/*
+window.onload = function(){
+    new Ajax.InPlaceEditor('editline','./save.php',{
+        method:'POST',
+        okText:'保存',
+        cancelText:'キャンセル',
+        savingText:'保存中です...',
+        clickToEditText:'クリックすると編集できます',
+        rows:5,
+        cols:35,
+        callback:function(form,value){
+            return 'field=editline&ipe=\n'+value;
+        },
+        onComplete: function(){
+            location.reload();
+        }
+    });
+}
+*/
+</script>
+<title>チャット</title>
+</head>
+<body>
+<div id="container_id"></div>
+<div id="selectedItem"></div>
+<div id="wrap">
+    <table id="sys_menu">
+        <tr>
+            <td class="left"><img src="img/admin_menu.jpg" alt="管理メニュー" border="0"></td>
+            <td class="left"><a href="./" id="btn"><div class="btn_img3_div">チャット</div></a></td>
+            <td class="right"><a href="login.html" id="btn"><div class="btn_img2_div_r">ログアウト</div></a></td>
+        </tr>
+    </table>
+    <div id="global">
+        <table>
+            <tr>
+                <td><img src="img/page_menu.jpg" alt="ページメニュー" border="0"></td>
+                <td align="left"><a href=""></a></td>
+            </tr>
+        </table>
+    </div>
+    <form action="" method="post">
+        <div id="inline_editor" align="center"></div>
+        <div id="" align="center">
+            <table>
+            <tr>
+                <td><div class="edit" id="editline">ここに入力して下さい</div></td>
+            </tr>
+            </table>
+        </div>
+    </form>
+    <div id="footer">(C) Ohtsu Fumihiro</div>
+</div>
+</body>
+</html>
