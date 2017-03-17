@@ -15,20 +15,21 @@ $(document).ready(function() {
 		}
 	});
 
+	var paramArray = [];
 	var url  = location.href;
 	params   = url.split("?");
-	spparams = params[1].split("&");
-
-	vol = spparams[0].split("=");
-	var paramArray = [];
-	paramArray[vol[0]] = vol[1];
+	if (params.length >= 2) {
+		spparams = params[1].split("&");
+		vol = spparams[0].split("=");
+		paramArray[vol[0]] = vol[1];
+	}
 	var dt = new Date();
 	var year = dt.getFullYear();
 	var month = ("00"+(dt.getMonth()+1)).slice(-2);
 	var day = ("00"+dt.getDate()).slice(-2);
 	var chk_date = String(year)+String(month)+String(day);
 
-	if ( paramArray["date"] != "") {
+	if ( paramArray["date"] ) {
 		if (paramArray["date"] == chk_date) {
 			$("#js_chat_area").show();
 		}
