@@ -53,11 +53,18 @@ $(document).ready(function() {
 	});
 
 	$.getJSON("data/link.json", function(data){
-		html_app = '<td><img src="img/page_menu.jpg" alt="ページメニュー" border="0"></td>';
+		html_app = '<table><tr id="link_list">';
+		html_app += '<td rowspan="' + Math.ceil(data.length/10) + '"><img src="img/page_menu.jpg" alt="ページメニュー" border="0"></td>';
+		var ct = 1;
 		for(var i in data){
-			html_app += '<td align="left"><a href="./chat.html?date=' + data[i].date + '">' + data[i].date + '</a></td>';
+			html_app += '<td align="left"><a href="./index.html?date=' + data[i].date + '">' + data[i].date + '</a></td>';
+			if (ct % 10 == 0) {
+				html_app += '</tr><tr id="link_list">';
+			}
+			ct++;
 		}
-		$ ("#link_list").append (html_app);
+		html_app += '</tr></table>';
+		$ ("#global").append (html_app);
 	});
 
 	$("#js_send_btn").click (function () {

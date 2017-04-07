@@ -20,7 +20,7 @@ $(document).ready(function(e) {
 						if (data[i].password === login_pass) {
 							window.sessionStorage.setItem(['user_id'],data[i].user_id);
 							var a = window.sessionStorage.getItem(['user_id']);
-							$(location).attr("href", "chat.html");
+							$(location).attr("href", "index.html");
 						} else {
 							alert("パスワードが違います");
 						}
