@@ -11,6 +11,11 @@ html,body {
   font:12px 'メイリオ',Meiryo;
   height:100%;
   margin:0px 5px;
+  background: #283e51; /* Old browsers */
+  background: -moz-linear-gradient(top, #283e51 0%, #4b79a1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #283e51 0%,#4b79a1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #283e51 0%,#4b79a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#283e51', endColorstr='#4b79a1',GradientType=0 ); /* IE6-9 */
 }
 
 #wrap {

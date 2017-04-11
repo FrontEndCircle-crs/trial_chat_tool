@@ -4,5 +4,7 @@
     { "user_id":"i-saito","comment":"@i-saito 圧縮の件、PHPだったかも。\nファイルをダウンロードして、それを表示するみたいな。結局minifyにはなっていない。","date":"13時59分28秒" },
     { "user_id":"m-shinozaki","comment":"test\ntest","date":"14時37分18秒" },
     { "user_id":"s-watanabe","comment":"<script>alert(\"OK\");</script>\n<script>alert(\"OK\");</script>","date":"14時37分52秒" },
-    { "user_id":"f-otsu","comment":"ああああ\nああああ","date":"15時55分36秒" }
+    { "user_id":"s-nakao","comment":"<script>alert(\"OK\");</script>\n<script>alert(\"OK\");</script>","date":"14時37分52秒" },
+    { "user_id":"y-fukumoto","comment":"<script>alert(\"OK\");</script>\n<script>alert(\"OK\");</script>","date":"14時37分52秒" },
+    { "user_id":"m-nakamura","comment":"ああああ\nああああ","date":"15時55分36秒" }
 ]

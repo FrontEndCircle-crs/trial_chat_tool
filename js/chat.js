@@ -39,13 +39,31 @@ $(document).ready(function() {
 		var date = chk_date;
 	}
 
+	var user_icon_arr = [];
+	$.ajax({
+		url: 'data/user_list.json',
+		dataType: 'json',
+		async: false,
+		success: function(user_list) {
+			for(var i in user_list){
+				user_icon_arr[user_list[i].user_id] = user_list[i].user_img;
+			}
+		}
+	});
+
 	$.getJSON("data/data_" + date + ".json", function(data){
 		html_app = '<table>';
 		for(var i in data){
 			html_app += '<tr>';
-			html_app += '<td><div class="edit">' + data[i].user_id + '</div></td>';
-			html_app += '<td><div class="edit">' + escapeHtml(data[i].comment) + '</div></td>';
-			html_app += '<td><div class="edit">' + data[i].date + '</div></td>';
+			if (data[i].user_id === ses_user_id) {
+//				html_app += '<td><div class="edit">' + data[i].date + '</div></td>';
+				html_app += '<td><div class="edit balloon-1-right">' + escapeHtml(data[i].comment) + '</div></td>';
+				html_app += '<td><div class="edit"><img src="' + user_icon_arr[data[i].user_id] + '" width="50"></div></td>';
+			} else {
+				html_app += '<td><div class="edit"><img src="' + user_icon_arr[data[i].user_id] + '" width="50"></div></td>';
+				html_app += '<td><div class="edit balloon-1-left">' + escapeHtml(data[i].comment) + '</div></td>';
+//				html_app += '<td><div class="edit">' + data[i].date + '</div></td>';
+			}
 			html_app += '</tr>';
 		}
 		html_app += '</table>';

@@ -1,11 +1,11 @@
 [
-    { "user_id": "f-otsu",     "password": "123456" },
-    { "user_id": "n-akimoto",  "password": "123456" },
-    { "user_id": "i-saito",    "password": "123456" },
-    { "user_id": "m-shinozaki","password": "123456" },
-    { "user_id": "s-watanabe", "password": "123456" },
-    { "user_id": "m-nakamura", "password": "123456" },
-    { "user_id": "s-nakao",    "password": "123456" },
-    { "user_id": "y-fukumoto", "password": "123456" }
+    { "user_id": "f-otsu",      "password": "123456", "user_img": "img/ohtsu_icon.png" },
+    { "user_id": "n-akimoto",   "password": "123456", "user_img": "img/akimoto_icon.png" },
+    { "user_id": "i-saito",     "password": "123456", "user_img": "img/saito_icon.png" },
+    { "user_id": "m-shinozaki", "password": "123456", "user_img": "img/shinozaki_icon.png" },
+    { "user_id": "s-watanabe",  "password": "123456", "user_img": "img/watanabe_icon.png" },
+    { "user_id": "m-nakamura",  "password": "123456", "user_img": "img/nakamura_icon.png" },
+    { "user_id": "s-nakao",     "password": "123456", "user_img": "img/nakao_icon.png" },
+    { "user_id": "y-fukumoto",  "password": "123456", "user_img": "img/fukumoto_icon.png" }
 ]
 

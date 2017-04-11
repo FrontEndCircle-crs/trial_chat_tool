@@ -19,6 +19,7 @@ $(document).ready(function(e) {
 					if (data[i].user_id === login_id) {
 						if (data[i].password === login_pass) {
 							window.sessionStorage.setItem(['user_id'],data[i].user_id);
+							window.sessionStorage.setItem(['user_img'],data[i].user_img);
 							var a = window.sessionStorage.getItem(['user_id']);
 							$(location).attr("href", "index.html");
 						} else {
