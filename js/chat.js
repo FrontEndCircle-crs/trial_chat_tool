@@ -9,7 +9,7 @@ $(document).ready(function() {
 		data: {},
 		timeout: 10000,
 		dataType: "text",
-		// ajax失敗
+		// ajax???s
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
 			$(location).attr("href", "login.html");
 		}
@@ -52,27 +52,27 @@ $(document).ready(function() {
 	});
 
 	$.getJSON("data/data_" + date + ".json", function(data){
-		html_app = '<table>';
+		html_app = '<div>';
 		for(var i in data){
-			html_app += '<tr>';
+			html_app += '<dl>';
 			if (data[i].user_id === ses_user_id) {
 //				html_app += '<td><div class="edit">' + data[i].date + '</div></td>';
-				html_app += '<td><div class="edit balloon-1-right">' + escapeHtml(data[i].comment) + '</div></td>';
-				html_app += '<td><div class="edit"><img src="' + user_icon_arr[data[i].user_id] + '" width="50"></div></td>';
+				html_app += '<dt><div class="edit balloon-1-right">' + escapeHtml(data[i].comment) + '</div></dt>';
+				html_app += '<dd><div class="editer_own"><img src="' + user_icon_arr[data[i].user_id] + '" width="50"></div></dd>';
 			} else {
-				html_app += '<td><div class="edit"><img src="' + user_icon_arr[data[i].user_id] + '" width="50"></div></td>';
-				html_app += '<td><div class="edit balloon-1-left">' + escapeHtml(data[i].comment) + '</div></td>';
+				html_app += '<dd><div class="editer_other"><img src="' + user_icon_arr[data[i].user_id] + '" width="50"></div></dd>';
+				html_app += '<dt><div class="edit balloon-1-left">' + escapeHtml(data[i].comment) + '</div></dt>';
 //				html_app += '<td><div class="edit">' + data[i].date + '</div></td>';
 			}
-			html_app += '</tr>';
+			html_app += '</dl>';
 		}
-		html_app += '</table>';
+		html_app += '</div>';
 		$ ("#inline_editor").append (html_app);
 	});
 
 	$.getJSON("data/link.json", function(data){
 		html_app = '<table><tr id="link_list">';
-		html_app += '<td rowspan="' + Math.ceil(data.length/10) + '"><img src="img/page_menu.jpg" alt="ページメニュー" border="0"></td>';
+		html_app += '<td rowspan="' + Math.ceil(data.length/10) + '"><img src="img/page_menu.jpg" alt="?y?[?W???j???[" border="0"></td>';
 		var ct = 1;
 		for(var i in data){
 			html_app += '<td align="left"><a href="./index.html?date=' + data[i].date + '">' + data[i].date + '</a></td>';
@@ -100,7 +100,7 @@ $(document).ready(function() {
 					$("#js_chat_msg").val("");
 					location.reload();
 				},
-				// ajax失敗
+				// ajax???s
 				error: function(XMLHttpRequest, textStatus, errorThrown) {
 				}
 			});

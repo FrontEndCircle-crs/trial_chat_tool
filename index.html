@@ -8,29 +8,27 @@
 <title>チャット</title>
 </head>
 <body>
-<div id="container_id"></div>
-<div id="selectedItem"></div>
-<div id="wrap">
-    <table id="sys_menu">
-        <tr>
-            <td class="left"><img src="img/admin_menu.jpg" alt="管理メニュー" border="0"></td>
-            <td class="left"><a href="./" id="btn"><div class="btn_img3_div">今日に戻る</div></a></td>
-            <td class="right"><a href="login.html" id="btn"><div class="btn_img2_div_r">ログアウト</div></a></td>
-        </tr>
-    </table>
-    <div id="global"></div>
-    <div id="inline_editor" align="center"></div>
-    <div id="js_chat_area" align="center" style="display:none;">
-        <table>
-        <tr>
-            <td><textarea id="js_chat_msg" rows="3" cols="30" placeholder="ここに入力して下さい"></textarea></td>
-        </tr>
-        <tr>
-            <td id="btn"><button id="js_send_btn" class="btn_img1" type="submit">送信</button></td>
-        </tr>
-        </table>
-    </div>
-    <div id="footer">(C) Ohtsu Fumihiro</div>
-</div>
+	<div id="container_id"></div>	
+	<div id="selectedItem"></div>
+	<div id="wrap">
+	    <table id="sys_menu">
+	        <tr>
+	            <td class="left"><img src="img/admin_menu.jpg" alt="管理メニュー" border="0"></td>
+	            <td class="left"><a href="./" id="btn"><div class="btn_img3_div">今日に戻る</div></a></td>
+	            <td class="right"><a href="login.html" id="btn"><div class="btn_img2_div_r">ログアウト</div></a></td>
+	        </tr>
+	    </table>
+	    <div id="global"></div>
+	    <div id="inline_editor" align="center"></div>
+	    <div id="js_chat_area" align="center" style="display:none;">
+			
+			<p><textarea id="js_chat_msg" class="chat_msg_txt" rows="3" cols="30" placeholder="ここに入力して下さい"></textarea></p>
+			<div id="btn">
+				<button id="js_send_btn" class="submit-btn" type="submit">送信</button>
+			</div>
+
+	    </div>
+	    <div id="footer">(C) Ohtsu Fumihiro</div>
+	</div>
 </body>
 </html>

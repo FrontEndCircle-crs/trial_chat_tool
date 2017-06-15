@@ -60,8 +60,8 @@
 }
 
 #inline_editor {
-  margin-top:30px;
-  padding-bottom:20px;
+  margin-top: 90px;
+  margin-bottom: 50px;
 }
 
 #inline_editor table {
@@ -71,11 +71,29 @@
 }
 
 #inline_editor table td {
-  border:solid 1px #dfdfdf;
+  /*border:solid 1px #dfdfdf;*/
 }
 
 #inline_editor table .edit {
   width:250px;
+}
+
+#inline_editor dt,
+#inline_editor dd {
+	display: inline-block;
+}
+
+.editer_own {
+	width: 90px;
+}
+
+.editer_own img,
+.editer_other img {
+	vertical-align: middle;
+}
+
+.editer_other {
+	width: 90px;
 }
 
 #add_btn {
@@ -93,78 +111,62 @@
 /* balloon-1 left */
 .balloon-1-left {
 	position: relative;
-	display: inline-block;
-	padding: 0 15px;
-	width: auto;
-	min-width: 115px;
-	color: #19283C;
-	text-align: center;
-	background: #F6F6F6;
-	border: 3px solid #19283C;
-	z-index: 0;
-}
-.balloon-1-left:before {
-	content: "";
-	position: absolute;
-	top: 50%; left: -8px;
-	margin-top: -9px;
-	display: block;
-	width: 0px;
-	height: 0px;
-	border-style: solid;
-	border-width: 9px 9px 9px 0;
-	border-color: transparent #F6F6F6 transparent transparent;
-	z-index: 0;
+	    padding: 0 15px;
+	    width: auto;
+	    color: #333;
+	    text-align: center;
+	    background: #fff;
+	    z-index: 0;
+	    padding: 10px 15px;
+	    margin: 10px;
+	    border-radius: 5px;
+	    font-size: 16px;
 }
 .balloon-1-left:after {
 	content: "";
 	position: absolute;
-	top: 50%; left: -12px;
+	top: 50%; left: -10px;
 	margin-top: -10px;
 	display: block;
 	width: 0px;
 	height: 0px;
 	border-style: solid;
 	border-width: 10px 10px 10px 0;
-	border-color: transparent #19283C transparent transparent;
-	z-index: -1;
+	border-color: transparent #fff transparent transparent;
 }
 /* balloon-1 right */
 .balloon-1-right {
 	position: relative;
-	display: inline-block;
-	padding: 0 15px;
-	width: auto;
-	min-width: 115px;
-	color: #19283C;
-	text-align: center;
-	background: #F6F6F6;
-	border: 3px solid #19283C;
-	z-index: 0;
-}
-.balloon-1-right:before {
-	content: "";
-	position: absolute;
-	top: 50%; right: -8px;
-	margin-top: -9px;
-	display: block;
-	width: 0px;
-	height: 0px;
-	border-style: solid;
-	border-width: 9px 0 9px 9px;
-	border-color: transparent transparent transparent #F6F6F6;
-	z-index: 0;
+	    padding: 0 15px;
+	    width: auto;
+	    color: #333;
+	    text-align: center;
+	    background: #fff;
+	    z-index: 0;
+	    padding: 10px 15px;
+	    margin: 10px;
+	    border-radius: 5px;
+	    font-size: 16px;
 }
 .balloon-1-right:after {
 	content: "";
 	position: absolute;
-	top: 50%; right: -12px;
+	top: 50%; right: -10px;
 	margin-top: -10px;
 	display: block;
 	width: 0px;
 	height: 0px;
 	border-style: solid;
 	border-width: 10px 0 10px 10px;
-	border-color: transparent transparent transparent #19283C;
-	z-index: -1;
+	border-color: transparent transparent transparent #fff;
+}
+
+.chat_msg_txt {
+	width: 280px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #aaa;
+	margin-bottom: 10px;
+	font-size: 16px;
+	height: 23px;
 }
